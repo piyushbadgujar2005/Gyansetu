@@ -5,20 +5,20 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="relative w-full py-16 md:py-24 bg-[#F5F1EA] dark:bg-[#1F1F1F] transition-colors duration-300"
+      className="relative w-full py-12 sm:py-16 md:py-20 lg:py-24 bg-[#F5F1EA] dark:bg-[#1F1F1F] transition-colors duration-300"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 sm:mb-16 md:mb-20">
+      <div className="max-w-6xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="text-center mb-10 sm:mb-14 md:mb-18 lg:mb-20">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-theme-light-heading dark:text-white">
             Contact Us
           </h2>
-          <p className="mt-3 sm:mt-4 text-base sm:text-lg md:text-xl text-theme-light-body dark:text-theme-dark-body px-2 max-w-2xl mx-auto">
+          <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg lg:text-xl text-theme-light-body dark:text-theme-dark-body px-2 max-w-2xl mx-auto">
             Get in touch with us for any inquiries or support
           </p>
-          <div className="mt-4 sm:mt-6 mx-auto h-[3px] w-20 sm:w-28 md:w-32 bg-[var(--bridge-gold)] rounded-full" />
+          <div className="mt-4 sm:mt-6 mx-auto h-[3px] w-16 sm:w-24 md:w-32 bg-[var(--bridge-gold)] rounded-full" />
         </div>
 
-        <div className="space-y-6 sm:space-y-8 max-w-3xl mx-auto">
+        <div className="space-y-4 sm:space-y-6 md:space-y-8 max-w-3xl mx-auto">
           {/* Email */}
           <a 
             href="mailto:contact@gyansetu.com"

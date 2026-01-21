@@ -7,12 +7,15 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 body {
   @apply font-sans bg-theme-light-bg text-theme-light-body transition-colors duration-300;
   @apply dark:bg-theme-dark-bg dark:text-theme-dark-body;
   overflow-x: hidden;
+  max-width: 100vw;
 }
 
 :root {

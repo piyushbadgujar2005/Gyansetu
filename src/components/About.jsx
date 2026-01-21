@@ -4,20 +4,20 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative w-full py-16 md:py-24 bg-white dark:bg-theme-dark-bg transition-colors duration-300"
+      className="relative w-full py-12 sm:py-16 md:py-20 lg:py-24 bg-white dark:bg-theme-dark-bg transition-colors duration-300"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-theme-light-heading dark:text-white">
             About GyanSetu
           </h2>
-          <p className="mt-3 sm:mt-4 text-base sm:text-lg md:text-xl text-theme-light-body dark:text-theme-dark-body px-2">
+          <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg lg:text-xl text-theme-light-body dark:text-theme-dark-body px-2">
             Bridging timeless knowledge with modern learning experiences
           </p>
-          <div className="mt-4 sm:mt-6 mx-auto h-[3px] w-20 sm:w-28 md:w-32 bg-[var(--bridge-gold)] rounded-full" />
+          <div className="mt-4 sm:mt-6 mx-auto h-[3px] w-16 sm:w-24 md:w-32 bg-[var(--bridge-gold)] rounded-full" />
         </div>
 
-        <div className="space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24">
+        <div className="space-y-8 sm:space-y-12 md:space-y-16 lg:space-y-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             <div className="px-2 sm:px-0">
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-theme-light-heading dark:text-white">Who We Are</h3>

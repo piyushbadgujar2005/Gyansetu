@@ -1,18 +1,11 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { useTheme } from '../context/useTheme';
 import { Link } from 'react-router-dom';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
-  const navRef = useRef(null);
-
-  useGSAP(() => {
-    gsap.from(navRef.current, { y: -100, opacity: 0, duration: 1, ease: "power3.out", delay: 2.2 });
-  }, { scope: navRef });
 
   const navLinks = ['Home', 'Products', 'About', 'Contact'];
 
@@ -22,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav ref={navRef} className="fixed top-0 w-full z-40 bg-theme-light-bg/80 dark:bg-theme-dark-bg/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
+    <nav className="fixed top-0 w-full z-40 bg-theme-light-bg/80 dark:bg-theme-dark-bg/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           

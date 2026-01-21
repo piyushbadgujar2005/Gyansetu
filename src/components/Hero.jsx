@@ -1,65 +1,13 @@
-import React, { useRef } from 'react';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
+import React from 'react';
 
 const Hero = () => {
-  const containerRef = useRef(null);
-  const bridgeRef = useRef(null);
-
-  useGSAP(() => {
-    const tl = gsap.timeline({ delay: 2.4 });
-
-    // Bridge Animation setup
-    const paths = bridgeRef.current.querySelectorAll('path');
-    
-    // Set initial state for draw animation
-    paths.forEach(path => {
-      const length = path.getTotalLength();
-      gsap.set(path, { strokeDasharray: length, strokeDashoffset: length });
-    });
-
-    // Draw animation
-    tl.to(paths, {
-      strokeDashoffset: 0,
-      duration: 2.5,
-      ease: 'power2.inOut',
-      stagger: 0.2
-    })
-    .to(bridgeRef.current, {
-        filter: 'drop-shadow(0 0 40px rgba(212, 175, 55, 0.4))', // Warm beige/gold glow
-        duration: 2,
-        ease: "power2.out"
-    }, "-=1");
-
-    tl.from('.hero-tag', { y: 20, opacity: 0, duration: 0.8 }, "-=2")
-      .from(
-        '.hero-title',
-        {
-          y: 50,
-          opacity: 0,
-          duration: 1,
-          ease: 'power4.out',
-          stagger: 0.15,
-        },
-        '-=1.5'
-      )
-      .from('.hero-desc', { y: 20, opacity: 0, duration: 0.8 }, '-=0.8')
-      .from(
-        '.hero-btn',
-        { y: 20, opacity: 0, duration: 0.6, stagger: 0.2 },
-        '-=0.6'
-      );
-  }, { scope: containerRef });
-
   return (
     <section
-      ref={containerRef}
-      className="relative w-full min-h-screen flex items-center justify-center pt-24 overflow-hidden bg-[#FFFFFF] dark:bg-theme-dark-bg transition-colors duration-300"
+      id="hero"
+      className="relative w-full h-[100vh] flex items-center justify-center overflow-hidden bg-white dark:bg-theme-dark-bg transition-colors duration-300"
     >
-      {/* Background Bridge SVG (Desktop) */}
       <div className="hidden md:block absolute inset-0 z-0 pointer-events-none">
         <svg
-          ref={bridgeRef}
           className="w-full h-full"
           viewBox="0 0 1440 900"
           preserveAspectRatio="none"
@@ -146,21 +94,21 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 w-full px-4 sm:px-6 md:px-8 text-center max-w-6xl mx-auto">
-        <h2 className="hero-tag text-black dark:text-white font-bold tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.3em] uppercase text-[10px] sm:text-xs md:text-sm lg:text-lg mb-6 sm:mb-8">
+      <div className="relative z-10 w-full px-3 sm:px-6 md:px-8 text-center max-w-6xl mx-auto">
+        <h2 className="hero-tag text-black dark:text-white font-bold tracking-[0.1em] sm:tracking-[0.2em] md:tracking-[0.3em] uppercase text-[8px] xs:text-[9px] sm:text-xs md:text-sm lg:text-lg mb-4 sm:mb-6 md:mb-8">
           GyanSetu – Innovation in Education
         </h2>
 
         {/* Sanskrit Heading */}
-        <div className="mt-16 sm:mt-20 md:mt-24 lg:mt-32 space-y-4 sm:space-y-4">
+        <div className="mt-4 xs:mt-6 sm:mt-12 md:mt-16 lg:mt-20 space-y-2 xs:space-y-3 sm:space-y-4">
           <h1
-            className="hero-title px-2 py-1 sm:p-2 md:p-4 font-devanagari text-[3rem] leading-[1.05] sm:text-6xl md:text-7xl lg:text-8xl xl:text-[10rem] font-normal sm:leading-[1.1] text-brand-orange dark:text-brand-orange drop-shadow-lg"
+            className="hero-title px-1 xs:px-2 py-1 sm:p-2 md:p-4 font-devanagari text-[2.5rem] xs:text-[3rem] sm:text-6xl md:text-7xl lg:text-8xl xl:text-[10rem] font-normal leading-[1.1] sm:leading-[1.1] text-brand-orange dark:text-brand-orange drop-shadow-lg"
           >
             ज्ञानसेतु –
           </h1>
 
           <h1
-            className="hero-title font-devanagari text-[3.5rem] leading-[1.1] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[8rem] font-normal sm:leading-[1.1] text-theme-light-heading dark:text-white drop-shadow-md"
+            className="hero-title font-devanagari text-[2rem] xs:text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[8rem] font-normal leading-[1.15] sm:leading-[1.1] text-theme-light-heading dark:text-white drop-shadow-md"
           >
             शिक्षायाः नवोन्मेषः
           </h1>

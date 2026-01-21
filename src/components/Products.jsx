@@ -55,19 +55,19 @@ const Products = () => {
         </div>
 
         <div className="space-y-12 sm:space-y-16 md:space-y-24 lg:space-y-32">
-          <div className="eco-block-1 group grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
+          <div className="eco-block-1 group grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center">
             <div className="eco-content px-2 sm:px-0">
-              <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-theme-light-heading dark:text-white">MathLab</div>
-              <div className="mt-2 sm:mt-3 text-base sm:text-lg md:text-xl text-theme-light-body dark:text-theme-dark-body">Math is not memorization. It's understanding.</div>
-              <p className="mt-3 sm:mt-4 md:mt-6 text-sm sm:text-base md:text-lg leading-relaxed text-theme-light-body dark:text-theme-dark-body">
+              <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-theme-light-heading dark:text-white">MathLab</div>
+              <div className="mt-2 text-sm sm:text-base md:text-lg text-theme-light-body dark:text-theme-dark-body">Math is not memorization. It's understanding.</div>
+              <p className="mt-3 sm:mt-4 md:mt-6 text-xs sm:text-sm md:text-base leading-relaxed text-theme-light-body dark:text-theme-dark-body">
                 MathLab helps students visualize concepts, practice hands-on learning, and build strong foundations through experiential mathematics.
               </p>
-              <div className="mt-4 sm:mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 text-xs sm:text-sm">
+              <div className="mt-4 sm:mt-6 grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 text-xs">
                 <span className="text-theme-light-heading dark:text-white">Concept visualization</span>
                 <span className="text-theme-light-heading dark:text-white">Hands-on practice</span>
                 <span className="text-theme-light-heading dark:text-white">Progress tracking</span>
               </div>
-              <button onClick={() => go('/products/mathlab')} className="mt-6 sm:mt-8 inline-flex items-center text-theme-light-heading dark:text-white font-semibold text-sm sm:text-base">
+              <button onClick={() => go('/products/mathlab')} className="mt-4 sm:mt-6 inline-flex items-center text-theme-light-heading dark:text-white font-semibold text-xs sm:text-sm">
                 <span className="relative">
                   Explore MathLab →
                   <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[var(--bridge-gold)] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-400" />
@@ -75,7 +75,7 @@ const Products = () => {
               </button>
             </div>
 
-            <div className="eco-visual mt-6 sm:mt-8 lg:mt-0 order-last lg:order-none">
+            <div className="eco-visual mt-4 sm:mt-6 lg:mt-0 order-last lg:order-none">
               <div className="relative w-full h-64 md:h-72 lg:h-80 rounded-2xl overflow-hidden ring-1 ring-[var(--bridge-gold)]/20 shadow-xl">
                 <img 
                   src="/mathlab.png" 
