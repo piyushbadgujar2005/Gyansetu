@@ -95,20 +95,20 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 w-full px-3 sm:px-6 md:px-8 text-center max-w-6xl mx-auto">
-        <h2 className="hero-tag text-black dark:text-white font-bold tracking-[0.1em] sm:tracking-[0.2em] md:tracking-[0.3em] uppercase text-[8px] xs:text-[9px] sm:text-xs md:text-sm lg:text-lg mb-4 sm:mb-6 md:mb-8">
+        <h2 className="hero-tag text-black dark:text-white font-bold tracking-[0.1em] sm:tracking-[0.2em] md:tracking-[0.3em] uppercase text-[10px] xs:text-xs sm:text-sm md:text-base lg:text-xl mb-4 sm:mb-6 md:mb-8">
           GyanSetu – Innovation in Education
         </h2>
 
         {/* Sanskrit Heading */}
         <div className="mt-4 xs:mt-6 sm:mt-12 md:mt-16 lg:mt-20 space-y-2 xs:space-y-3 sm:space-y-4">
           <h1
-            className="hero-title px-1 xs:px-2 py-1 sm:p-2 md:p-4 font-devanagari text-[2.5rem] xs:text-[3rem] sm:text-6xl md:text-7xl lg:text-8xl xl:text-[10rem] font-normal leading-[1.1] sm:leading-[1.1] text-brand-orange dark:text-brand-orange drop-shadow-lg"
+            className="hero-title px-1 xs:px-2 py-1 sm:p-2 md:p-4 font-devanagari text-[4.5rem] xs:text-[5rem] sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[12rem] font-normal leading-[1.1] sm:leading-[1.1] text-brand-orange dark:text-brand-orange drop-shadow-lg"
           >
             ज्ञानसेतु –
           </h1>
 
           <h1
-            className="hero-title font-devanagari text-[2rem] xs:text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[8rem] font-normal leading-[1.15] sm:leading-[1.1] text-theme-light-heading dark:text-white drop-shadow-md"
+            className="hero-title font-devanagari text-[3.5rem] xs:text-[4rem] sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-normal leading-[1.15] sm:leading-[1.1] text-theme-light-heading dark:text-white drop-shadow-md"
           >
             शिक्षायाः नवोन्मेषः
           </h1>
