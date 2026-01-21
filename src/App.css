@@ -1,0 +1,82 @@
+/* Bridge theme variables */
+:root {
+  --bridge-gold: #E6A23C;
+  --bridge-glow: rgba(230, 162, 60, 0.4);
+}
+
+.dark {
+  --bridge-gold: #F5B75F;
+  --bridge-glow: rgba(245, 183, 95, 0.6);
+}
+
+/* Sanskrit typography */
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit:wght@400;500&family=Noto+Serif+Devanagari:wght@400;500&display=swap');
+
+.font-devanagari {
+  font-family: 'Tiro Devanagari Sanskrit', 'Noto Serif Devanagari', serif;
+  font-kerning: normal;
+  letter-spacing: 0.02em;
+}
+
+/* Bridge animations */
+.bridge-deck {
+  stroke: var(--bridge-gold);
+}
+
+.bridge-cables {
+  stroke: var(--bridge-gold);
+}
+
+.bridge-pillars {
+  stroke: var(--bridge-gold);
+}
+
+.bridge-vertical-cables {
+  stroke: var(--bridge-gold);
+}
+
+.bridge-glow {
+  filter: url(#glowFilter);
+}
+
+.knowledge-flow {
+  stroke: var(--bridge-gold);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .bridge-container {
+    top: 70%;
+    height: 30%;
+  }
+  
+  .font-devanagari {
+    font-size: 4rem;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 480px) {
+  .bridge-container {
+    top: 75%;
+    height: 25%;
+  }
+  
+  .font-devanagari {
+    font-size: 3rem;
+    line-height: 1.4;
+  }
+}
+
+/* Ensure proper layering */
+section {
+  isolation: isolate;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-2 {
+  z-index: 2;
+}

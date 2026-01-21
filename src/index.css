@@ -1,0 +1,74 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans bg-theme-light-bg text-theme-light-body transition-colors duration-300;
+  @apply dark:bg-theme-dark-bg dark:text-theme-dark-body;
+  overflow-x: hidden;
+}
+
+:root {
+  --bridge-gold: #E6A23C;
+  --bridge-glow: rgba(230, 162, 60, 0.35);
+  --about-bg-base: #F5F1EA;
+  --about-bg-shift: rgba(230, 210, 180, 0.18);
+  --visual-bg: #FFFFFF;
+}
+
+.dark {
+  --bridge-gold: #F5B75F;
+  --bridge-glow: rgba(245, 183, 95, 0.55);
+  --about-bg-base: #111111;
+  --about-bg-shift: rgba(245, 183, 95, 0.08);
+  --visual-bg: #1A1A1A;
+}
+
+/* Headings global style */
+h1, h2, h3, h4, h5, h6 {
+  @apply text-theme-light-heading dark:text-theme-dark-heading;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #EA9010;
+}
+
+/* Hide scrollbar for horizontal scrolling containers but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Animation Utilities */
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
