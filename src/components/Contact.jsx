@@ -71,7 +71,10 @@ const Contact = () => {
                 Mon-Fri, 9AM-6PM IST
               </p>
               <p className="text-xs sm:text-sm md:text-base font-semibold text-theme-light-heading dark:text-white">
+                +91 9768329786
+                <br />
                 +91 9850969921
+
               </p>
             </div>
             <div className="absolute top-5 sm:top-6 right-5 sm:right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -118,7 +121,7 @@ const Contact = () => {
                 <span>Send Us a Message</span>
               </a>
               <a
-                href="tel:+919850969921"
+                href="tel:+919768329786"
                 className="inline-flex items-center gap-2 px-5 sm:px-7 md:px-9 py-2.5 sm:py-3 md:py-3.5 bg-white dark:bg-theme-dark-bg border-2 border-brand-orange/30 hover:border-brand-orange/50 text-theme-light-heading dark:text-white font-bold text-xs sm:text-sm md:text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
                 <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5" />
