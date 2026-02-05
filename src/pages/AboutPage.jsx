@@ -114,22 +114,22 @@ const AboutPage = () => {
       </div>
 
       {/* Header */}
-      <div className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden z-10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 transition-colors duration-300">
+      <div className="relative pt-24 pb-12 sm:pt-28 sm:pb-16 md:pt-40 md:pb-32 overflow-hidden z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 transition-colors duration-300">
           <button
             onClick={() => navigate('/')}
-            className="header-content group inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-white/60 dark:bg-white/5 backdrop-blur-xl border border-brand-orange/20 text-theme-light-heading dark:text-theme-dark-heading hover:text-brand-orange dark:hover:text-brand-orange transition-all mb-12 shadow-lg shadow-brand-orange/5"
+            className="header-content group inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-2.5 rounded-full bg-white/60 dark:bg-white/5 backdrop-blur-xl border border-brand-orange/20 text-theme-light-heading dark:text-theme-dark-heading hover:text-brand-orange dark:hover:text-brand-orange transition-all mb-6 sm:mb-12 shadow-lg shadow-brand-orange/5"
           >
-            <ArrowLeft className="w-5 h-5 group-hover:-translate-x-2 transition-transform" />
-            <span className="text-xs font-bold tracking-[0.25em] uppercase">Return to Knowledge</span>
+            <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5 group-hover:-translate-x-2 transition-transform" />
+            <span className="text-[10px] sm:text-xs font-bold tracking-[0.2em] sm:tracking-[0.25em] uppercase">Back Home</span>
           </button>
           
           <div className="header-content max-w-5xl">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-theme-light-heading dark:text-white leading-[0.9] mb-10 tracking-tighter">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-theme-light-heading dark:text-white leading-[0.95] mb-4 sm:mb-10 tracking-tighter">
               Legacy in <br />
               <span className="text-brand-orange">Innovation.</span>
             </h1>
-            <p className="text-xl sm:text-2xl md:text-3xl text-theme-light-body dark:text-theme-dark-body leading-relaxed max-w-3xl opacity-90 font-medium">
+            <p className="text-base sm:text-xl md:text-2xl lg:text-3xl text-theme-light-body dark:text-theme-dark-body leading-relaxed max-w-3xl opacity-90 font-medium">
               Bridging traditional educational wisdom with modern technology to empower the next generation of global learners.
             </p>
           </div>
@@ -137,24 +137,24 @@ const AboutPage = () => {
       </div>
 
       {/* Mission & Vision Section */}
-      <div className="relative py-24 md:py-32 bg-white/40 dark:bg-white/[0.02] border-y border-brand-orange/10 backdrop-blur-md z-10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16">
-            <div className="mission-vision-card group p-10 rounded-[3.5rem] bg-white dark:bg-theme-dark-card border border-brand-orange/20 hover:border-brand-orange/40 transition-all duration-500 shadow-2xl hover:shadow-[0_20px_60px_rgba(234,144,16,0.1)]">
-              <div className="w-20 h-20 bg-brand-orange/10 rounded-3xl flex items-center justify-center mb-10 group-hover:rotate-12 transition-transform duration-500 shadow-inner">
-                <Target className="w-10 h-10 text-brand-orange" />
+      <div className="relative py-12 sm:py-16 md:py-32 bg-white/40 dark:bg-white/[0.02] border-y border-brand-orange/10 backdrop-blur-md z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-16">
+            <div className="mission-vision-card group p-6 sm:p-8 md:p-10 rounded-2xl sm:rounded-[2.5rem] md:rounded-[3.5rem] bg-white dark:bg-theme-dark-card border border-brand-orange/20 hover:border-brand-orange/40 transition-all duration-500 shadow-xl sm:shadow-2xl hover:shadow-[0_20px_60px_rgba(234,144,16,0.1)]">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-brand-orange/10 rounded-2xl sm:rounded-3xl flex items-center justify-center mb-4 sm:mb-6 md:mb-10 group-hover:rotate-12 transition-transform duration-500 shadow-inner">
+                <Target className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 text-brand-orange" />
               </div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-theme-light-heading dark:text-white mb-6">Our Mission</h2>
-              <p className="text-xl text-theme-light-body dark:text-theme-dark-body leading-relaxed opacity-90 font-medium">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-theme-light-heading dark:text-white mb-3 sm:mb-4 md:mb-6">Our Mission</h2>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-theme-light-body dark:text-theme-dark-body leading-relaxed opacity-90 font-medium">
                 To bridge traditional educational wisdom with modern technology by building intuitive tools that empower both students and educators to achieve meaningful learning outcomes.
               </p>
             </div>
-            <div className="mission-vision-card group p-10 rounded-[3.5rem] bg-white dark:bg-theme-dark-card border border-blue-500/20 hover:border-blue-500/40 transition-all duration-500 shadow-2xl hover:shadow-[0_20px_60px_rgba(59,130,246,0.1)]">
-              <div className="w-20 h-20 bg-blue-500/10 rounded-3xl flex items-center justify-center mb-10 group-hover:rotate-12 transition-transform duration-500 shadow-inner">
-                <Lightbulb className="w-10 h-10 text-blue-500" />
+            <div className="mission-vision-card group p-6 sm:p-8 md:p-10 rounded-2xl sm:rounded-[2.5rem] md:rounded-[3.5rem] bg-white dark:bg-theme-dark-card border border-blue-500/20 hover:border-blue-500/40 transition-all duration-500 shadow-xl sm:shadow-2xl hover:shadow-[0_20px_60px_rgba(59,130,246,0.1)]">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-blue-500/10 rounded-2xl sm:rounded-3xl flex items-center justify-center mb-4 sm:mb-6 md:mb-10 group-hover:rotate-12 transition-transform duration-500 shadow-inner">
+                <Lightbulb className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 text-blue-500" />
               </div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-theme-light-heading dark:text-white mb-6">Our Vision</h2>
-              <p className="text-xl text-theme-light-body dark:text-theme-dark-body leading-relaxed opacity-90 font-medium">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-theme-light-heading dark:text-white mb-3 sm:mb-4 md:mb-6">Our Vision</h2>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-theme-light-body dark:text-theme-dark-body leading-relaxed opacity-90 font-medium">
                 To create a learning ecosystem where curiosity leads, understanding follows, and education becomes meaningful for every student across India.
               </p>
             </div>
@@ -163,18 +163,18 @@ const AboutPage = () => {
       </div>
 
       {/* Team Showcase */}
-      <div className="relative py-28 md:py-40 z-10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="header-content text-center mb-24 md:mb-36">
-            <h2 className="text-4xl sm:text-6xl md:text-8xl font-bold text-theme-light-heading dark:text-white mb-10 tracking-tighter">
+      <div className="relative py-12 sm:py-20 md:py-40 z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="header-content text-center mb-10 sm:mb-16 md:mb-36">
+            <h2 className="text-2xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-theme-light-heading dark:text-white mb-4 sm:mb-6 md:mb-10 tracking-tighter">
               Leadership <span className="text-brand-orange">Visionaries</span>
             </h2>
-            <p className="text-xl md:text-2xl text-theme-light-body dark:text-theme-dark-body max-w-3xl mx-auto opacity-70 font-medium">
+            <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-theme-light-body dark:text-theme-dark-body max-w-3xl mx-auto opacity-70 font-medium">
               The passionate educators committed to transforming the educational landscape of India.
             </p>
           </div>
 
-          <div className="team-section-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-14 lg:gap-10">
+          <div className="team-section-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-10">
             {teamMembers.map((member, index) => (
               <div key={index} className="team-card-trigger h-full">
                 <HoverRevealCard 
@@ -189,34 +189,34 @@ const AboutPage = () => {
       </div>
 
       {/* Values Grid */}
-      <div className="relative py-28 md:py-40 bg-white/40 dark:bg-white/[0.02] border-t border-brand-orange/10 z-10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="header-content text-center mb-24">
-            <h2 className="text-4xl sm:text-6xl font-bold text-theme-light-heading dark:text-white mb-8 tracking-tighter">
+      <div className="relative py-12 sm:py-20 md:py-40 bg-white/40 dark:bg-white/[0.02] border-t border-brand-orange/10 z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="header-content text-center mb-8 sm:mb-12 md:mb-24">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-theme-light-heading dark:text-white mb-4 sm:mb-6 md:mb-8 tracking-tighter">
               The <span className="text-brand-orange">GyanSetu</span> Code
             </h2>
           </div>
-          <div className="values-grid-box grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12">
+          <div className="values-grid-box grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-8 lg:gap-10">
             {[
-              { title: "Innovation", icon: Rocket, color: "text-brand-orange", bg: "bg-brand-orange/10" },
-              { title: "Impact", icon: Award, color: "text-blue-500", bg: "bg-blue-500/10" },
-              { title: "Integrity", icon: ShieldCheck, color: "text-emerald-500", bg: "bg-emerald-500/10" },
-              { title: "Collaboration", icon: Users, color: "text-purple-500", bg: "bg-purple-500/10" },
-              { title: "Accessibility", icon: Target, color: "text-cyan-500", bg: "bg-cyan-500/10" },
-              { title: "Excellence", icon: Lightbulb, color: "text-amber-500", bg: "bg-amber-500/10" }
+              { title: "Innovation", icon: Rocket, color: "text-brand-orange", bg: "bg-brand-orange/10", desc: "Exploring new ideas and technologies to create cutting-edge educational tools." },
+              { title: "Impact", icon: Award, color: "text-blue-500", bg: "bg-blue-500/10", desc: "Creating measurable improvements in student understanding and performance." },
+              { title: "Integrity", icon: ShieldCheck, color: "text-emerald-500", bg: "bg-emerald-500/10", desc: "Honest practices and delivering exactly what we promise." },
+              { title: "Collaboration", icon: Users, color: "text-purple-500", bg: "bg-purple-500/10", desc: "Working closely with educators to build solutions together." },
+              { title: "Accessibility", icon: Target, color: "text-cyan-500", bg: "bg-cyan-500/10", desc: "Affordable tools for every school in every corner of India." },
+              { title: "Excellence", icon: Lightbulb, color: "text-amber-500", bg: "bg-amber-500/10", desc: "Striving for excellence in every aspect of our work." }
             ].map((value, index) => (
               <div
                 key={index}
-                className="value-card p-12 rounded-[3.5rem] bg-white dark:bg-theme-dark-card border border-brand-orange/10 hover:border-brand-orange/30 transition-all duration-500 shadow-xl hover:shadow-[0_20px_50px_rgba(234,144,16,0.15)]"
+                className="value-card p-3 sm:p-5 md:p-8 lg:p-10 rounded-xl sm:rounded-2xl md:rounded-[2.5rem] bg-white dark:bg-theme-dark-card border border-brand-orange/10 hover:border-brand-orange/30 transition-all duration-500 shadow-md sm:shadow-lg hover:shadow-xl"
               >
-                <div className={`w-20 h-20 ${value.bg} rounded-3xl flex items-center justify-center mb-10 shadow-inner`}>
-                  <value.icon className={`w-10 h-10 ${value.color}`} />
+                <div className={`w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-18 lg:h-18 ${value.bg} rounded-lg sm:rounded-xl md:rounded-2xl flex items-center justify-center mb-2 sm:mb-3 md:mb-5 shadow-inner`}>
+                  <value.icon className={`w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 ${value.color}`} />
                 </div>
-                <h3 className="text-2xl font-bold text-theme-light-heading dark:text-white mb-5 tracking-tight">
+                <h3 className="text-sm sm:text-base md:text-xl lg:text-2xl font-bold text-theme-light-heading dark:text-white mb-1 sm:mb-2 md:mb-3 tracking-tight">
                   {value.title}
                 </h3>
-                <p className="text-lg text-theme-light-body dark:text-theme-dark-body leading-relaxed opacity-80 font-medium">
-                  Dedicated to maintaining the highest standards of {value.title.toLowerCase()} in everything we build.
+                <p className="text-[10px] sm:text-xs md:text-sm lg:text-base text-theme-light-body dark:text-theme-dark-body leading-snug sm:leading-relaxed opacity-80 font-medium">
+                  {value.desc}
                 </p>
               </div>
             ))}
