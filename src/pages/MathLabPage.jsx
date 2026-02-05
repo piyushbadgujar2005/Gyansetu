@@ -53,16 +53,16 @@ const MathLabPage = () => {
   ];
 
   return (
-    <div ref={containerRef} className="min-h-screen bg-theme-light-bg dark:bg-brand-dark transition-colors duration-500 overflow-hidden">
+    <div ref={containerRef} className="min-h-screen bg-theme-light-bg dark:bg-brand-dark transition-colors duration-500 overflow-hidden w-full">
       
       {/* Cinematic Background Elements */}
-      <div className="absolute inset-0 pointer-events-none z-0">
-        <div className="bg-orb absolute top-[-10%] right-[-10%] w-[60vw] h-[60vw] bg-brand-orange/10 rounded-full blur-[120px]" />
-        <div className="bg-orb absolute bottom-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-blue-500/10 rounded-full blur-[100px]" />
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+        <div className="bg-orb absolute top-[-10%] right-[-15%] sm:right-[-10%] w-[75vw] h-[75vw] sm:w-[60vw] sm:h-[60vw] bg-brand-orange/10 rounded-full blur-[100px] sm:blur-[120px]" />
+        <div className="bg-orb absolute bottom-[-10%] left-[-15%] sm:left-[-10%] w-[65vw] h-[65vw] sm:w-[50vw] sm:h-[50vw] bg-blue-500/10 rounded-full blur-[80px] sm:blur-[100px]" />
       </div>
 
       {/* Ultra-Premium Hero Section */}
-      <section className="relative h-[85vh] flex items-center justify-center overflow-hidden z-10">
+      <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden z-10">
         {/* Parallax Background */}
         <div className="absolute inset-0 z-0">
           <div 
@@ -72,25 +72,25 @@ const MathLabPage = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/40 via-brand-dark/60 to-brand-dark" />
         </div>
         
-        <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
+        <div className="relative z-10 text-center px-4 sm:px-6 max-w-6xl mx-auto pt-24 sm:pt-28 md:pt-20">
           <button
             onClick={() => navigate('/')}
-            className="hero-badge group inline-flex items-center gap-2 px-6 py-2 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 text-white hover:border-brand-orange/40 transition-all mb-12"
+            className="hero-badge group inline-flex items-center gap-2 px-4 sm:px-6 py-1.5 sm:py-2 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 text-white hover:border-brand-orange/40 transition-all mb-8 sm:mb-12"
           >
-            <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-            <span className="text-[10px] font-black tracking-[0.3em] uppercase">Ecosystem Discovery</span>
+            <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 group-hover:-translate-x-1 transition-transform" />
+            <span className="text-[8px] sm:text-[10px] font-black tracking-[0.2em] sm:tracking-[0.3em] uppercase">Ecosystem Discovery</span>
           </button>
 
-          <h1 className="hero-title text-7xl md:text-9xl font-black text-white mb-8 tracking-tighter leading-[0.85]">
+          <h1 className="hero-title text-5xl sm:text-7xl md:text-9xl font-black text-white mb-6 sm:mb-8 tracking-tighter leading-[0.85]">
             Math<span className="text-brand-orange">Lab</span>
           </h1>
           
-          <p className="hero-description text-xl md:text-2xl font-medium text-white/80 max-w-3xl mx-auto leading-relaxed italic">
+          <p className="hero-description text-lg sm:text-xl md:text-2xl font-medium text-white/80 max-w-3xl mx-auto leading-relaxed italic">
             "Transforming abstract equations into <br className="hidden md:block"/> 
             <span className="text-brand-orange">tangible understanding.</span>"
           </p>
 
-          <div className="hero-description mt-12 flex justify-center gap-6">
+          <div className="hero-description mt-8 sm:mt-12 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
             <div className="flex -space-x-2">
               {[
                 'https://images.unsplash.com/photo-1562774053-701939374585?w=100&h=100&fit=crop',
@@ -98,13 +98,13 @@ const MathLabPage = () => {
                 'https://images.unsplash.com/photo-1592280771190-3e2e4d571952?w=100&h=100&fit=crop',
                 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=100&h=100&fit=crop'
               ].map((img, i) => (
-                <div key={i} className="w-12 h-12 rounded-lg border-2 border-white/20 bg-white overflow-hidden shadow-lg">
+                <div key={i} className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg border-2 border-white/20 bg-white overflow-hidden shadow-lg">
                   <img src={img} alt={`School ${i + 1}`} className="w-full h-full object-cover" />
                 </div>
               ))}
             </div>
-            <div className="text-left">
-              <p className="text-white font-bold text-sm">Trusted by 500+ Schools</p>
+            <div className="text-center sm:text-left">
+              <p className="text-white font-bold text-xs sm:text-sm">Trusted by 500+ Schools</p>
               <div className="flex gap-1">
                 {[1,2,3,4,5].map(i => <div key={i} className="w-2 h-2 rounded-full bg-brand-orange" />)}
               </div>
@@ -115,19 +115,19 @@ const MathLabPage = () => {
 
       {/* Fluid Navigation Tabs */}
       <div className="tab-nav-sticky sticky top-20 z-40 bg-theme-light-bg/80 dark:bg-brand-dark/80 backdrop-blur-2xl border-y border-brand-orange/10">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex space-x-12 md:space-x-20 overflow-x-auto no-scrollbar justify-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="flex space-x-6 sm:space-x-12 md:space-x-20 overflow-x-auto no-scrollbar justify-start sm:justify-center">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`relative py-8 flex items-center gap-3 text-[11px] font-black tracking-[0.3em] uppercase transition-all duration-500 ${
+                className={`relative py-6 sm:py-8 flex items-center gap-2 sm:gap-3 text-[9px] sm:text-[11px] font-black tracking-[0.2em] sm:tracking-[0.3em] uppercase transition-all duration-500 whitespace-nowrap ${
                   activeTab === tab.id 
                     ? 'text-brand-orange' 
                     : 'text-theme-light-body/40 dark:text-white/30 hover:text-brand-orange'
                 }`}
               >
-                <tab.icon className={`w-4 h-4 transition-transform duration-500 ${activeTab === tab.id ? 'scale-125 rotate-12' : ''}`} />
+                <tab.icon className={`w-3 h-3 sm:w-4 sm:h-4 transition-transform duration-500 ${activeTab === tab.id ? 'scale-125 rotate-12' : ''}`} />
                 <span>{tab.label}</span>
                 {activeTab === tab.id && (
                   <div className="absolute bottom-0 left-0 w-full h-1 bg-brand-orange shadow-[0_-4px_20px_rgba(234,144,16,0.8)] rounded-t-full" />
@@ -139,33 +139,33 @@ const MathLabPage = () => {
       </div>
 
       {/* Dynamic Content Surface */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 md:py-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24 md:py-32">
         <div className="active-tab-content min-h-[50vh]">
           
           {/* Overview Tab */}
           {activeTab === 'overview' && (
-            <div className="grid lg:grid-cols-5 gap-16 items-start">
+            <div className="grid lg:grid-cols-5 gap-8 sm:gap-12 lg:gap-16 items-start">
               {/* Main Content - Left Side */}
-              <div className="lg:col-span-3 space-y-10">
-                <div className="space-y-6">
-                  <h3 className="text-5xl md:text-6xl font-black text-theme-light-heading dark:text-white tracking-tight leading-tight">
+              <div className="lg:col-span-3 space-y-8 sm:space-y-10">
+                <div className="space-y-4 sm:space-y-6">
+                  <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-theme-light-heading dark:text-white tracking-tight leading-tight">
                     Transform Math into a <span className="text-brand-orange">Hands-On Experience</span>
                   </h3>
-                  <p className="text-xl leading-relaxed text-theme-light-body dark:text-white/70 font-medium">
+                  <p className="text-base sm:text-lg md:text-xl leading-relaxed text-theme-light-body dark:text-white/70 font-medium">
                     MathLab is a physical, activity-based mathematics learning system that helps students understand concepts through visualization, experimentation, and real-world interaction.
                   </p>
-                  <p className="text-lg leading-relaxed text-theme-light-body dark:text-white/60">
+                  <p className="text-base sm:text-lg leading-relaxed text-theme-light-body dark:text-white/60">
                     Instead of learning math only through textbooks and formulas, students engage with tangible tools that make abstract ideas in algebra, geometry, mensuration, number systems, and data handling become visible, touchable, and intuitive.
                   </p>
                 </div>
 
                 {/* What's Included Section */}
-                <div className="p-8 rounded-3xl bg-gradient-to-br from-brand-orange/5 to-amber-500/5 dark:from-brand-orange/10 dark:to-amber-500/10 border border-brand-orange/20">
-                  <h4 className="text-2xl font-bold mb-6 text-brand-orange flex items-center gap-3">
-                    <Box className="w-6 h-6" />
+                <div className="p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-brand-orange/5 to-amber-500/5 dark:from-brand-orange/10 dark:to-amber-500/10 border border-brand-orange/20">
+                  <h4 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-brand-orange flex items-center gap-2 sm:gap-3">
+                    <Box className="w-5 h-5 sm:w-6 sm:h-6" />
                     What's Included
                   </h4>
-                  <div className="grid md:grid-cols-2 gap-4">
+                  <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
                     <div className="flex gap-3 items-start">
                       <CheckCircle className="w-5 h-5 text-brand-orange flex-shrink-0 mt-1" />
                       <span className="text-sm text-theme-light-body dark:text-white/70">Physical models for 2D/3D geometry and spatial reasoning</span>
@@ -186,7 +186,7 @@ const MathLabPage = () => {
                 </div>
 
                 {/* Demo Video Section */}
-                <div className="relative group rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl aspect-video border-2 border-brand-orange/20">
+                <div className="relative group rounded-xl sm:rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl aspect-video border-2 border-brand-orange/20">
                   <iframe 
                     className="absolute inset-0 w-full h-full"
                     src="https://www.youtube.com/embed/N656hUmNuRU?si=YA2UTQcyPAC7pOC5" 
@@ -199,26 +199,31 @@ const MathLabPage = () => {
                 </div>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-wrap gap-4">
-                  <button className="px-10 py-5 bg-brand-orange text-white font-black text-sm uppercase tracking-widest rounded-2xl shadow-2xl hover:scale-105 transition-transform flex items-center gap-3">
-                    <Download className="w-5 h-5" />
+                <div className="flex flex-wrap gap-3 sm:gap-4">
+                  <button className="px-6 sm:px-10 py-4 sm:py-5 bg-brand-orange text-white font-black text-xs sm:text-sm uppercase tracking-widest rounded-xl sm:rounded-2xl shadow-2xl hover:scale-105 transition-transform flex items-center gap-2 sm:gap-3">
+                    <Download className="w-4 h-4 sm:w-5 sm:h-5" />
                     <span>Download Brochure</span>
                   </button>
-                  <button className="px-10 py-5 bg-white dark:bg-white/5 border-2 border-brand-orange text-brand-orange font-black text-sm uppercase tracking-widest rounded-2xl hover:bg-brand-orange hover:text-white transition-all">
+                  <a 
+                    href="https://wa.me/919768329786?text=Hi%2C%20I%20am%20interested%20in%20MathLab.%20Please%20share%20more%20details."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 sm:px-10 py-4 sm:py-5 bg-white dark:bg-white/5 border-2 border-brand-orange text-brand-orange font-black text-xs sm:text-sm uppercase tracking-widest rounded-xl sm:rounded-2xl hover:bg-brand-orange hover:text-white transition-all inline-flex items-center gap-2"
+                  >
                     Request Demo
-                  </button>
+                  </a>
                 </div>
               </div>
 
               {/* Sidebar - Right Side */}
               <div className="lg:col-span-2 space-y-6">
                 {/* Designed For Card */}
-                <div className="p-8 rounded-3xl bg-white dark:bg-white/[0.03] border border-blue-500/20 shadow-2xl sticky top-28">
-                  <h4 className="text-2xl font-bold mb-8 text-blue-500 flex items-center gap-3">
-                    <Brain className="w-6 h-6" />
+                <div className="p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-white dark:bg-white/[0.03] border border-blue-500/20 shadow-2xl lg:sticky lg:top-28">
+                  <h4 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 text-blue-500 flex items-center gap-2 sm:gap-3">
+                    <Brain className="w-5 h-5 sm:w-6 sm:h-6" />
                     Designed For
                   </h4>
-                  <div className="space-y-6">
+                  <div className="space-y-4 sm:space-y-6">
                     <div className="flex gap-4 items-start">
                       <div className="w-12 h-12 rounded-xl bg-brand-orange/10 flex items-center justify-center flex-shrink-0">
                         <span className="text-xl font-black text-brand-orange">6-10</span>
@@ -252,12 +257,12 @@ const MathLabPage = () => {
                   <div className="mt-8 pt-8 border-t border-blue-500/10">
                     <div className="grid grid-cols-2 gap-4 text-center">
                       <div>
-                        <div className="text-3xl font-black text-brand-orange mb-1">500+</div>
-                        <div className="text-xs text-theme-light-body dark:text-white/60 uppercase tracking-wider">Schools Trust Us</div>
+                        <div className="text-2xl sm:text-3xl font-black text-brand-orange mb-1">500+</div>
+                        <div className="text-[10px] sm:text-xs text-theme-light-body dark:text-white/60 uppercase tracking-wider">Schools Trust Us</div>
                       </div>
                       <div>
-                        <div className="text-3xl font-black text-blue-500 mb-1">75%</div>
-                        <div className="text-xs text-theme-light-body dark:text-white/60 uppercase tracking-wider">Higher Retention</div>
+                        <div className="text-2xl sm:text-3xl font-black text-blue-500 mb-1">75%</div>
+                        <div className="text-[10px] sm:text-xs text-theme-light-body dark:text-white/60 uppercase tracking-wider">Higher Retention</div>
                       </div>
                     </div>
                   </div>
@@ -269,18 +274,18 @@ const MathLabPage = () => {
 
           {/* Features Tab */}
           {activeTab === 'features' && (
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
               {[
                 { icon: Box, title: "Geometry Tools", desc: "Physical models for 2D/3D shapes, volume, and spatial reasoning.", color: "text-brand-orange", bg: "bg-brand-orange/10" },
                 { icon: Puzzle, title: "Activity Kits", desc: "Structured, gamified activities that encourage exploration.", color: "text-blue-500", bg: "bg-blue-500/10" },
                 { icon: Brain, title: "Logic Builders", desc: "Tools to visualize abstract theorems and algebraic patterns.", color: "text-emerald-500", bg: "bg-emerald-500/10" },
                 { icon: BookOpen, title: "Curriculum Map", desc: "Seamlessly aligned with CBSE, ICSE, and State Board syllabi.", color: "text-purple-500", bg: "bg-purple-500/10" }
               ].map((feature, idx) => (
-                <div key={idx} className="group p-10 rounded-[3rem] bg-white dark:bg-white/[0.03] border border-brand-orange/10 hover:border-brand-orange/30 transition-all duration-500 shadow-xl hover:shadow-[0_20px_60px_rgba(234,144,16,0.1)]">
-                  <div className={`w-16 h-16 ${feature.bg} rounded-2xl flex items-center justify-center mb-8 shadow-inner transition-transform duration-500 group-hover:rotate-12`}>
-                    <feature.icon className={`w-8 h-8 ${feature.color}`} />
+                <div key={idx} className="group p-6 sm:p-10 rounded-[2rem] sm:rounded-[3rem] bg-white dark:bg-white/[0.03] border border-brand-orange/10 hover:border-brand-orange/30 transition-all duration-500 shadow-xl hover:shadow-[0_20px_60px_rgba(234,144,16,0.1)]">
+                  <div className={`w-12 h-12 sm:w-16 sm:h-16 ${feature.bg} rounded-xl sm:rounded-2xl flex items-center justify-center mb-6 sm:mb-8 shadow-inner transition-transform duration-500 group-hover:rotate-12`}>
+                    <feature.icon className={`w-6 h-6 sm:w-8 sm:h-8 ${feature.color}`} />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-theme-light-heading dark:text-white tracking-tight">{feature.title}</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-theme-light-heading dark:text-white tracking-tight">{feature.title}</h3>
                   <p className="text-theme-light-body dark:text-white/60 leading-relaxed font-medium">
                     {feature.desc}
                   </p>
@@ -291,20 +296,20 @@ const MathLabPage = () => {
 
           {/* Benefits Tab */}
           {activeTab === 'benefits' && (
-            <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+            <div className="max-w-6xl mx-auto grid sm:grid-cols-2 gap-6 sm:gap-8">
               {[
                 { title: "Conceptual Clarity", desc: "Builds a strong foundation for future learning by visualizing the 'why' behind the math.", icon: CheckCircle, color: "text-brand-orange" },
                 { title: "Student Engagement", desc: "Makes math class the highlight of the day through active participation.", icon: CheckCircle, color: "text-blue-500" },
                 { title: "Anxiety Reduction", desc: "Transforms fear of numbers into curiosity and confidence.", icon: CheckCircle, color: "text-emerald-500" },
                 { title: "Retention Mastery", desc: "Active learning leads to 75% higher retention rates compared to lectures.", icon: CheckCircle, color: "text-purple-500" }
               ].map((benefit, idx) => (
-                <div key={idx} className="flex items-start gap-8 p-10 rounded-[3rem] bg-white dark:bg-white/[0.03] border border-brand-orange/10 shadow-xl hover:border-brand-orange/30 transition-all duration-500">
+                <div key={idx} className="flex items-start gap-4 sm:gap-8 p-6 sm:p-10 rounded-[2rem] sm:rounded-[3rem] bg-white dark:bg-white/[0.03] border border-brand-orange/10 shadow-xl hover:border-brand-orange/30 transition-all duration-500">
                   <div className="mt-1 flex-shrink-0">
-                    <benefit.icon className={`w-10 h-10 ${benefit.color}`} />
+                    <benefit.icon className={`w-8 h-8 sm:w-10 sm:h-10 ${benefit.color}`} />
                   </div>
-                  <div className="space-y-4">
-                    <h3 className="text-2xl font-bold text-theme-light-heading dark:text-white tracking-tight">{benefit.title}</h3>
-                    <p className="text-lg text-theme-light-body dark:text-white/60 font-medium leading-relaxed">
+                  <div className="space-y-2 sm:space-y-4">
+                    <h3 className="text-xl sm:text-2xl font-bold text-theme-light-heading dark:text-white tracking-tight">{benefit.title}</h3>
+                    <p className="text-base sm:text-lg text-theme-light-body dark:text-white/60 font-medium leading-relaxed">
                       {benefit.desc}
                     </p>
                   </div>

@@ -33,7 +33,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-10 sm:mb-14 md:mb-16">
           {/* Email Card */}
           <a
-            href="mailto:contact@gyansetu.com"
+            href="mailto:gyansetuglobal@gmail.com"
             className="group relative p-5 sm:p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-500/10 to-cyan-500/10 dark:from-blue-500/20 dark:to-cyan-500/20 border border-brand-orange/20 hover:border-brand-orange/40 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
           >
             <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mb-3 sm:mb-4 md:mb-6 rounded-lg md:rounded-xl bg-blue-500 flex items-center justify-center shadow-lg">
@@ -47,7 +47,7 @@ const Contact = () => {
                 Send us an email anytime
               </p>
               <p className="text-xs sm:text-sm md:text-base font-semibold text-theme-light-heading dark:text-white break-words">
-                contact@gyansetu.com
+                gyansetuglobal@gmail.com
               </p>
             </div>
             <div className="absolute top-5 sm:top-6 right-5 sm:right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -57,7 +57,7 @@ const Contact = () => {
 
           {/* Phone Card */}
           <a
-            href="tel:+911234567890"
+            href="tel:+919850969921"
             className="group relative p-5 sm:p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-green-500/10 to-emerald-500/10 dark:from-green-500/20 dark:to-emerald-500/20 border border-brand-orange/20 hover:border-brand-orange/40 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
           >
             <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mb-3 sm:mb-4 md:mb-6 rounded-lg md:rounded-xl bg-green-500 flex items-center justify-center shadow-lg">
@@ -71,7 +71,7 @@ const Contact = () => {
                 Mon-Fri, 9AM-6PM IST
               </p>
               <p className="text-xs sm:text-sm md:text-base font-semibold text-theme-light-heading dark:text-white">
-                +91 123 456 7890
+                +91 9850969921
               </p>
             </div>
             <div className="absolute top-5 sm:top-6 right-5 sm:right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -89,10 +89,10 @@ const Contact = () => {
                 Visit Us
               </h3>
               <p className="text-xs sm:text-sm text-theme-light-body dark:text-theme-dark-body opacity-70">
-                Our office location
+                Registered Office
               </p>
               <p className="text-xs sm:text-sm md:text-base font-semibold text-theme-light-heading dark:text-white break-words leading-relaxed">
-                123 Education Street, New Delhi, India 110001
+                C/O Abhay Kulkarni Csn, 8195 Chandraprabha Colony, Jalgaon, Maharashtra, India - 425001
               </p>
             </div>
           </div>
@@ -111,14 +111,14 @@ const Contact = () => {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-2 sm:pt-4">
               <a
-                href="mailto:contact@gyansetu.com"
+                href="mailto:gyansetuglobal@gmail.com"
                 className="inline-flex items-center gap-2 px-5 sm:px-7 md:px-9 py-2.5 sm:py-3 md:py-3.5 bg-gradient-to-r from-brand-orange to-amber-500 hover:from-brand-orange/90 hover:to-amber-500/90 text-white font-bold text-xs sm:text-sm md:text-base rounded-xl shadow-xl shadow-brand-orange/30 hover:shadow-2xl hover:shadow-brand-orange/40 transition-all duration-300 hover:scale-105"
               >
                 <Mail className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5" />
                 <span>Send Us a Message</span>
               </a>
               <a
-                href="tel:+911234567890"
+                href="tel:+919850969921"
                 className="inline-flex items-center gap-2 px-5 sm:px-7 md:px-9 py-2.5 sm:py-3 md:py-3.5 bg-white dark:bg-theme-dark-bg border-2 border-brand-orange/30 hover:border-brand-orange/50 text-theme-light-heading dark:text-white font-bold text-xs sm:text-sm md:text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
                 <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5" />

@@ -1,0 +1,22 @@
+# GyanSetu Robots.txt
+# https://gyansetuglobal.in
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://gyansetuglobal.in/sitemap.xml
+
+# Disallow admin/private areas
+Disallow: /api/
+Disallow: /*.json$
+
+# Allow all search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

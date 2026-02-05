@@ -19,8 +19,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           
-          <Link to="/" className="flex-shrink-0 cursor-pointer text-2xl font-bold tracking-tighter text-theme-light-heading dark:text-theme-dark-heading transition-colors">
-            Gyan<span className="text-brand-orange">Setu</span>
+          <Link to="/" className="flex-shrink-0 cursor-pointer">
+            <img 
+              src="https://res.cloudinary.com/dweebldig/image/upload/v1770315689/gyansetu-removebg-preview_fnvdmb.png" 
+              alt="GyanSetu" 
+              className="h-14 sm:h-18 md:h-[7vw] md:max-h-26 w-auto"
+            />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">

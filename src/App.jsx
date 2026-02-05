@@ -36,11 +36,11 @@ function AppContent() {
   };
 
   return (
-    <div className="antialiased min-h-screen bg-theme-light-bg dark:bg-brand-dark transition-colors duration-300">
+    <div className="antialiased min-h-screen bg-theme-light-bg dark:bg-brand-dark transition-colors duration-300 overflow-x-hidden">
       {showLoading && <LoadingPage onComplete={handleLoadingComplete} />}
       <ScrollToTop />
       <Navbar />
-      <main>
+      <main className="overflow-x-hidden">
         <Routes>
           <Route
             path="/"
