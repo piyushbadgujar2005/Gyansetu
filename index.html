@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Primary SEO Meta Tags -->
-    <title>GyanSetu</title>
-    <meta name="title" content="GyanSetu - Interactive Boards, MathLab & EdTech Solutions for Schools in India" />
+    <title>GyanSetu - Smart Classroom Solutions | EdTech for Schools in India</title>
+    <meta name="title" content="GyanSetu - Smart Classroom Solutions | Interactive Boards, MathLab & EdTech for Schools" />
     <meta name="description" content="GyanSetu provides innovative educational technology solutions including Interactive Smart Boards, MathLab kits, and LangueTech for schools across India. Transform your classroom with our cutting-edge learning tools." />
     <meta name="keywords" content="interactive boards, smart boards, mathlab, education technology, edtech, school technology, interactive whiteboard, digital classroom, smart classroom, education solutions, India, Jalgaon, Maharashtra, learning tools, STEM education, language learning" />
     <meta name="author" content="GyanSetu Global Growth Pvt. Ltd." />
@@ -88,39 +88,116 @@
     }
     </script>
     
-    <!-- Structured Data - Products -->
+    <!-- Structured Data - WebSite with SearchAction (enables Google sitelinks search) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ItemList",
-      "name": "GyanSetu Products",
-      "description": "Educational technology products for schools",
-      "itemListElement": [
-        {
-          "@type": "Product",
-          "position": 1,
-          "name": "Interactive Boards",
-          "description": "4K Ultra HD touchscreen smart boards for modern classrooms with multi-touch support and built-in Android system.",
-          "brand": {"@type": "Brand", "name": "GyanSetu"},
-          "category": "Educational Technology"
+      "@type": "WebSite",
+      "name": "GyanSetu",
+      "alternateName": ["ज्ञानसेतु", "GyanSetu Global", "Gyansetu"],
+      "url": "https://gyansetuglobal.in",
+      "description": "Smart Classroom Solutions & EdTech for Schools in India",
+      "publisher": {
+        "@type": "Organization",
+        "name": "GyanSetu Global Growth Pvt. Ltd."
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://gyansetuglobal.in/?s={search_term_string}"
         },
-        {
-          "@type": "Product",
-          "position": 2,
-          "name": "MathLab",
-          "description": "Hands-on mathematics learning kits that make abstract concepts tangible for students.",
-          "brand": {"@type": "Brand", "name": "GyanSetu"},
-          "category": "Educational Technology"
-        },
-        {
-          "@type": "Product",
-          "position": 3,
-          "name": "LangueTech",
-          "description": "Advanced language learning solutions powered by AI for effective language acquisition.",
-          "brand": {"@type": "Brand", "name": "GyanSetu"},
-          "category": "Educational Technology"
-        }
-      ]
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <!-- Structured Data - Educational Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "GyanSetu",
+      "alternateName": "GyanSetu Global Growth Pvt. Ltd.",
+      "url": "https://gyansetuglobal.in",
+      "logo": "https://res.cloudinary.com/dweebldig/image/upload/v1770315689/gyansetu-removebg-preview_fnvdmb.png",
+      "image": "https://gyansetuglobal.in/og-image.jpg",
+      "description": "GyanSetu provides innovative educational technology solutions including Interactive Smart Boards, MathLab kits, and LangueTech for schools across India.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C/O Abhay Kulkarni Csn, 8195 Chandraprabha Colony",
+        "addressLocality": "Jalgaon",
+        "addressRegion": "Maharashtra",
+        "postalCode": "425001",
+        "addressCountry": "IN"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-9850969921",
+        "contactType": "customer service",
+        "email": "gyansetuglobal@gmail.com",
+        "availableLanguage": ["English", "Hindi", "Marathi"]
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "priceRange": "$$",
+      "keywords": "GyanSetu, ज्ञानसेतु, smart classroom, interactive boards, MathLab, EdTech, school technology, India"
+    }
+    </script>
+    
+    <!-- Structured Data - Interactive Boards Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Interactive Boards",
+      "description": "Smart interactive boards for modern digital classrooms and institutions. 4K Ultra HD touchscreen displays with multi-touch support and built-in Android system.",
+      "provider": {
+        "@type": "EducationalOrganization",
+        "name": "GyanSetu Global",
+        "url": "https://gyansetuglobal.in/"
+      },
+      "areaServed": "IN",
+      "serviceType": "Classroom Technology",
+      "url": "https://gyansetuglobal.in/products/interactive-boards"
+    }
+    </script>
+    
+    <!-- Structured Data - MathLab Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "MathLab",
+      "description": "Hands-on mathematics learning kits that make abstract concepts tangible for students. Comprehensive STEM education tools for schools.",
+      "provider": {
+        "@type": "EducationalOrganization",
+        "name": "GyanSetu Global",
+        "url": "https://gyansetuglobal.in/"
+      },
+      "areaServed": "IN",
+      "serviceType": "STEM Education",
+      "url": "https://gyansetuglobal.in/products/math-lab"
+    }
+    </script>
+    
+    <!-- Structured Data - LangueTech Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "LangueTech",
+      "description": "AI-powered language learning solution designed for schools and educational institutions. Advanced tools for effective language acquisition.",
+      "provider": {
+        "@type": "EducationalOrganization",
+        "name": "GyanSetu Global",
+        "url": "https://gyansetuglobal.in/"
+      },
+      "areaServed": "IN",
+      "serviceType": "Educational Technology",
+      "url": "https://gyansetuglobal.in/products/langue-tech"
     }
     </script>
   </head>

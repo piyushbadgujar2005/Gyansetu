@@ -170,21 +170,28 @@ const Hero = ({ isVisible }) => {
 
           {/* Main Headlines */}
           <div className="space-y-4 sm:space-y-6 md:space-y-8">
+            {/* SEO-optimized H1 - visually hidden but crawlable */}
+            <h1 className="sr-only">
+              GyanSetu - Smart Classroom Solutions for Schools in India | Interactive Boards, MathLab & EdTech
+            </h1>
+            
             {/* Sanskrit Headline - ज्ञानसेतु (Golden) */}
-            <h1
+            <p
               ref={headline1Ref}
+              aria-hidden="true"
               className="font-kalam text-[12vw] sm:text-[10vw] font-bold leading-tight text-brand-orange dark:text-brand-orange dark:drop-shadow-[0_0_40px_rgba(234,144,16,0.4)] transition-all duration-500"
             >
               ज्ञानसेतु –
-            </h1>
+            </p>
 
             {/* Sanskrit Tagline - शिक्षायाः नवोन्मेषः (Theme Adaptive) */}
-            <h2
+            <p
               ref={headline2Ref}
+              aria-hidden="true"
               className="font-kalam text-[8vw] sm:text-[7vw] font-bold leading-tight text-theme-light-heading dark:text-white drop-shadow-lg"
             >
               शिक्षायाः नवोन्मेषः
-            </h2>
+            </p>
           </div>
 
           {/* CTA */}

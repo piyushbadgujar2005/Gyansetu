@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import { ArrowLeft, Target, Lightbulb, Award, Users, Rocket, ShieldCheck } from 'lucide-react';
+import { ArrowLeft, Target, Lightbulb, Award, Users, Rocket, ShieldCheck, HelpCircle, ChevronDown } from 'lucide-react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -218,6 +218,81 @@ const AboutPage = () => {
                 <p className="text-[10px] sm:text-xs md:text-sm lg:text-base text-theme-light-body dark:text-theme-dark-body leading-snug sm:leading-relaxed opacity-80 font-medium">
                   {value.desc}
                 </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* FAQ Section with Schema Markup */}
+      <div className="relative py-12 sm:py-20 md:py-32 z-10">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="header-content text-center mb-8 sm:mb-12 md:mb-16">
+            <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-brand-orange/10 rounded-2xl sm:rounded-3xl flex items-center justify-center mx-auto mb-4 sm:mb-6 md:mb-8">
+              <HelpCircle className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 text-brand-orange" />
+            </div>
+            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-theme-light-heading dark:text-white mb-4 sm:mb-6 tracking-tighter">
+              Frequently Asked <span className="text-brand-orange">Questions</span>
+            </h2>
+            <p className="text-sm sm:text-base md:text-lg text-theme-light-body dark:text-theme-dark-body opacity-80">
+              Everything you need to know about GyanSetu
+            </p>
+          </div>
+
+          {/* FAQ Items with Schema Data */}
+          <div 
+            className="space-y-4 sm:space-y-6"
+            itemScope 
+            itemType="https://schema.org/FAQPage"
+          >
+            {[
+              {
+                question: "What is GyanSetu?",
+                answer: "GyanSetu is an EdTech company based in Jalgaon, Maharashtra, India. We provide innovative smart classroom solutions including Interactive Boards, MathLab kits, and LangueTech language learning software for schools across India. Our mission is to bridge traditional education with modern technology."
+              },
+              {
+                question: "What products does GyanSetu offer?",
+                answer: "GyanSetu offers three main products: 1) Interactive Smart Boards - 4K Ultra HD touchscreen displays with multi-touch support for digital classrooms, 2) MathLab - Hands-on mathematics learning kits that make abstract concepts tangible, and 3) LangueTech - AI-powered language learning solutions for effective communication skills."
+              },
+              {
+                question: "Where is GyanSetu located?",
+                answer: "GyanSetu Global Growth Pvt. Ltd. is headquartered in Jalgaon, Maharashtra, India. Our address is C/O Abhay Kulkarni Csn, 8195 Chandraprabha Colony, Jalgaon 425001. We serve schools and educational institutions across India."
+              },
+              {
+                question: "How can I contact GyanSetu?",
+                answer: "You can reach GyanSetu through multiple channels: Email us at gyansetuglobal@gmail.com, call us at +91-9850969921, or visit our website at gyansetuglobal.in. Our team is available to assist with product inquiries, demos, and support in English, Hindi, and Marathi."
+              },
+              {
+                question: "Is GyanSetu suitable for all types of schools?",
+                answer: "Yes! GyanSetu's products are designed for schools of all sizes - from small primary schools to large secondary institutions. Our solutions are affordable, easy to implement, and come with comprehensive training and support. We work with government schools, private schools, and coaching institutes across India."
+              }
+            ].map((faq, index) => (
+              <div 
+                key={index}
+                className="faq-item p-5 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl bg-white dark:bg-theme-dark-card border border-brand-orange/10 hover:border-brand-orange/30 transition-all duration-300 shadow-lg hover:shadow-xl"
+                itemScope
+                itemProp="mainEntity"
+                itemType="https://schema.org/Question"
+              >
+                <h3 
+                  className="text-base sm:text-lg md:text-xl font-bold text-theme-light-heading dark:text-white mb-3 sm:mb-4 flex items-start gap-3"
+                  itemProp="name"
+                >
+                  <span className="text-brand-orange font-bold text-lg sm:text-xl">Q.</span>
+                  {faq.question}
+                </h3>
+                <div 
+                  itemScope 
+                  itemProp="acceptedAnswer" 
+                  itemType="https://schema.org/Answer"
+                >
+                  <p 
+                    className="text-sm sm:text-base text-theme-light-body dark:text-theme-dark-body leading-relaxed opacity-90 pl-7"
+                    itemProp="text"
+                  >
+                    {faq.answer}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
